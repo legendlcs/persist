@@ -1,0 +1,33 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "title": "User",
+    "description": "A person",
+    "type": "object",
+    "properties":
+    {
+       "name":
+       {
+          "description": "A person's name",
+          "type": "string"
+       },
+       "age":
+       {
+          "description": "A person's age",
+          "type": "number",
+          "minimum": 18,
+          "maximum": 80
+       },
+       "email":
+       {
+           "description": "A person's email",
+           "type": "string"
+       },
+       "password":
+       {
+            "description": "A person's password",
+            "type": "string"
+       }                                                                           
+    },
+    "required": ["name", "age", "email", "password"]   
+ }
+
